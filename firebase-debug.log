@@ -1,0 +1,49 @@
+[debug] [2024-11-08T12:47:01.913Z] ----------------------------------------------------------------------
+[debug] [2024-11-08T12:47:01.916Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC-SECUNDARIA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-08T12:47:01.917Z] CLI Version:   13.24.2
+[debug] [2024-11-08T12:47:01.917Z] Platform:      win32
+[debug] [2024-11-08T12:47:01.917Z] Node Version:  v22.11.0
+[debug] [2024-11-08T12:47:01.917Z] Time:          Fri Nov 08 2024 08:47:01 GMT-0400 (hora de Bolivia)
+[debug] [2024-11-08T12:47:01.917Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-08T12:47:01.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-08T12:47:01.981Z] > authorizing via signed-in user (royer.zurita.zeballos@gmail.com)
+[debug] [2024-11-08T12:47:01.981Z] [iam] checking project practica-2023 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-08T12:47:01.982Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:01.983Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:01.983Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/practica-2023:testIamPermissions [none]
+[debug] [2024-11-08T12:47:01.984Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/practica-2023:testIamPermissions x-goog-quota-user=projects/practica-2023
+[debug] [2024-11-08T12:47:01.984Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/practica-2023:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-08T12:47:03.140Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/practica-2023:testIamPermissions 200
+[debug] [2024-11-08T12:47:03.140Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/practica-2023:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-08T12:47:03.141Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:03.141Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:03.141Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/practica-2023 [none]
+[debug] [2024-11-08T12:47:03.558Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/practica-2023 200
+[debug] [2024-11-08T12:47:03.558Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/practica-2023 {"projectId":"practica-2023","projectNumber":"64596908373","displayName":"practica 2023","name":"projects/practica-2023","resources":{"hostingSite":"practica-2023"},"state":"ACTIVE","etag":"1_b624f4af-20ae-4988-9416-33188573a971"}
+[info] 
+[info] === Deploying to 'practica-2023'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-11-08T12:47:03.577Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:03.578Z] Checked if tokens are valid: true, expires at: 1731071897989
+[debug] [2024-11-08T12:47:03.578Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/practica-2023/versions [none]
+[debug] [2024-11-08T12:47:03.578Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/practica-2023/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-11-08T12:47:05.091Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/practica-2023/versions 200
+[debug] [2024-11-08T12:47:05.091Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/practica-2023/versions {"name":"projects/64596908373/sites/practica-2023/versions/bf45490b0a15353a","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[practica-2023]: beginning deploy... 
+[info] i  hosting[practica-2023]: found 344099 files in ./ 
+[debug] [2024-11-08T12:48:15.513Z] [hosting] uploading with 200 concurrency
+[debug] [2024-11-08T12:48:15.514Z] [hosting] hash cache [] not populated
+[debug] [2024-11-08T12:48:15.619Z] Error: EBUSY: resource busy or locked, open 'C:\Users\PC-SECUNDARIA\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:48:15.620Z] Error: EBUSY: resource busy or locked, open 'C:\Users\PC-SECUNDARIA\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:48:15.623Z] Error: EBUSY: resource busy or locked, open 'C:\Users\PC-SECUNDARIA\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:48:15.635Z] Error: EISDIR: illegal operation on a directory, read
+[error] 
+[error] Error: An unexpected error has occurred.
